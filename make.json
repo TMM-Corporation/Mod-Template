@@ -1,0 +1,79 @@
+{
+	"global": {
+		"info": {
+			"name": "Project-Name",
+			"author": "ToxesFoxes",
+			"version": "0.1",
+			"description": "Some cool description for your cool mod",
+			"icon": "src/assets/mod_icon.png"
+		},
+		"api": "CoreEngine"
+	},
+	"make": {
+		"debugAbi": "armeabi-v7a",
+		"abis": ["armeabi-v7a", "x86"],
+		"linkNative": ["minecraftpe", "innercore", "nativejs"],
+		"excludeFromRelease": [],
+		"pushTo": "storage/emulated/0/games/horizon/packs/innercore-dev/innercore/mods/Chisel",
+		"ndkPath": null
+	},
+	"resources": [
+		{
+			"path": "src/assets/ic_mod",
+			"type": "resource_directory"
+		},
+		{
+			"path": "src/assets/ui",
+			"type": "gui"
+		},
+		{
+			"path": "src/assets/resource_packs/*",
+			"type": "minecraft_resource_pack"
+		},
+		{
+			"path": "src/assets/behavior_packs/*",
+			"type": "minecraft_behavior_pack"
+		}
+	],
+	"sources": [
+		{
+			"source": "src/build/preloader",
+			"target": "preloader.js",
+			"type": "preloader",
+			"language": "javascript"
+		},
+		{
+			"source": "src/build/dev",
+			"target": "main.js",
+			"type": "main",
+			"includes": ".includes",
+			"language": "javascript"
+		},
+		{
+			"source": "src/build/launcher.js",
+			"type": "launcher",
+			"language": "javascript"
+		},
+		{
+			"source": "src/lib/*",
+			"type": "library",
+			"language": "javascript"
+		}
+	],
+	"compile": [
+		{
+			"source": "src/build/native/*",
+			"type": "native"
+		}
+	],
+	"additional": [
+		{
+			"source": "src/config.json",
+			"targetDir": "."
+		},
+		{
+			"source": "src/config.info.json",
+			"targetDir": "."
+		}
+	]
+}

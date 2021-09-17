@@ -1,0 +1,9 @@
+{
+	"enabled": true,
+	"first_group": {
+		"sub_element_1": 15,
+		"sub_element_2": 10
+	},
+	"some_element_1": "abc",
+	"some_element_condition_1": 1.23
+}

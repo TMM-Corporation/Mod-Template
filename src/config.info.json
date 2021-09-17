@@ -1,0 +1,71 @@
+{
+	"description": {
+		"en": "This is a configuration of Template mod",
+		"ru": "Это конфигурация шаблонного мода"
+	},
+	"properties": {
+		"enabled": {
+			"name": { 
+				"en": "Enable mod", 
+				"ru": "Включить мод" 
+			},
+			"index": 0
+		},
+		"first_group": {
+			"name": { 
+				"en": "First group", 
+				"ru": "Первая группа" 
+			},
+			"collapsible": true,
+			"index": 1
+		},
+		"first_group.sub_element_1": {
+			"name": { 
+				"en": "Some sub element 1", 
+				"ru": "Какой-то под элемент 1" 
+			},
+			"description": { 
+				"en": "Some sub element 1 description", 
+				"ru": "Описание под элемента 1" 
+			},
+			"index": 2,
+			"type": "SeekBar",
+			"min": 0,
+			"value": 10,
+			"max": 200
+		},
+		"first_group.sub_element_2": {
+			"name": { 
+				"en": "Some sub element 2", 
+				"ru": "Какой-то под элемент 2" 
+			},
+			"description": { 
+				"en": "Some sub element 2 description", 
+				"ru": "Описание под элемента 2" 
+			},
+			"index": 3
+		},
+		"some_element_1": {
+			"name": { 
+				"en": "Some", 
+				"ru": "Что-то" 
+			},
+			"description": { 
+				"en": "Some description", 
+				"ru": "Описание чего-то" 
+			},
+			"index": 4
+		},
+		"some_element_condition_1": {
+			"name": { 
+				"en": "Some", 
+				"ru": "Что-то" 
+			},
+			"description": { 
+				"en": "Some description", 
+				"ru": "Описание чего-то" 
+			},
+			"displayIf": "enabled"
+		}
+	}
+}
