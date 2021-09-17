@@ -14,12 +14,12 @@
 		"abis": ["armeabi-v7a", "x86"],
 		"linkNative": ["minecraftpe", "innercore", "nativejs"],
 		"excludeFromRelease": [],
-		"pushTo": "storage/emulated/0/games/horizon/packs/innercore-dev/innercore/mods/Chisel",
+		"pushTo": "storage/emulated/0/games/horizon/packs/innercore-dev/innercore/mods/Mod-Template",
 		"ndkPath": null
 	},
 	"resources": [
 		{
-			"path": "src/assets/ic_mod",
+			"path": "src/assets/res",
 			"type": "resource_directory"
 		},
 		{
