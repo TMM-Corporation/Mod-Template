@@ -50,6 +50,8 @@ This is port for Minecraft Bedrock Edition, working under InnerCore for Horizon 
 2. Configure make.json from root folder of mod
 3. Configure projects.json of the toolchain for selecting the project
 
+The `make.json` file should look like this:
+
 ```json
 {
   "current": "project-name",
@@ -76,7 +78,7 @@ This is port for Minecraft Bedrock Edition, working under InnerCore for Horizon 
 │ │ │ │ ├ behavior_packs        # Behavior packs
 │ │ │ │ ├ res                   # Resources of mod
 │ │ │ │ │ ├ items-opaque        # Item textures
-│ │ │ │ │ └ terrain-atlas       # Block textures
+│ │ │ │ │ ├ terrain-atlas       # Block textures
 │ │ │ │ ├ resource_packs        # Resource packs
 │ │ │ │ ├ ui                    # UI textures
 │ │ │ │ ├ mod_icon.png          # Mod icon
@@ -94,7 +96,7 @@ This is port for Minecraft Bedrock Edition, working under InnerCore for Horizon 
 │ │ │ │ │ ├ project-name        # Project name
 │ │ │ │ │ │ ├ shared_headers    # Header files
 │ │ │ │ │ │ │ ├ callbacks.h     
-│ │ │ │ │ │ │ └ ...             
+│ │ │ │ │ │ │ ├ ...             
 │ │ │ │ │ │ ├ main.cpp          # Main file
 │ │ │ │ │ │ └ manifest          # Build manifest
 │ │ │ │ ├ preloader             # Preloader build, starts before minecraft
