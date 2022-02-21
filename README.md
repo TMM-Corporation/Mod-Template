@@ -38,62 +38,7 @@ This is port for Minecraft Bedrock Edition, working under InnerCore for Horizon 
 
 ## Getting Started
 
-Goto [toolchain wiki](https://github.com/TMM-Corporation/innercore-mod-toolchain/wiki) and setup all
-
-### Folder structure with Toolchain
-
-```
-.
-├ mods
-│ ├ ...
-│ ├ Project Name                # Name project
-│ │ ├ src                       # Source code
-│ │ │ ├ assets                  # Assets
-│ │ │ │ ├ behavior_packs        # Behavior packs
-│ │ │ │ ├ res                   # Resources of mod
-│ │ │ │ │ ├ items-opaque        # Item textures
-│ │ │ │ │ ├ terrain-atlas       # Block textures
-│ │ │ │ ├ resource_packs        # Resource packs
-│ │ │ │ ├ ui                    # UI textures
-│ │ │ │ ├ mod_icon.png          # Mod icon
-│ │ │ ├ build                   # Build folders
-│ │ │ │ ├ dev                   # Main development build
-│ │ │ │ │ ├ header.js           
-│ │ │ │ │ ├ ...                 
-│ │ │ │ │ ├ .includes           # Include files into build
-│ │ │ │ ├ java                  # Java build
-│ │ │ │ │ ├ project-name        # Project name
-│ │ │ │ │ │ ├ lib               # Libraries
-│ │ │ │ │ │ ├ src               # Source code
-│ │ │ │ │ │ └ manifest          # Build manifest
-│ │ │ │ ├ native                # C++/Native build
-│ │ │ │ │ ├ project-name        # Project name
-│ │ │ │ │ │ ├ shared_headers    # Header files
-│ │ │ │ │ │ │ ├ callbacks.h     
-│ │ │ │ │ │ │ ├ ...             
-│ │ │ │ │ │ ├ main.cpp          # Main file
-│ │ │ │ │ │ └ manifest          # Build manifest
-│ │ │ │ ├ preloader             # Preloader build, starts before minecraft
-│ │ │ │ │ ├ ...                 
-│ │ │ │ │ ├ .includes           # Include files
-│ │ │ │ ├ launcher.js           # Launcher configuration file
-│ │ │ │ └ ...                   
-│ │ │ ├ lib                     # JS Libraries for mod
-│ │ │ ├ config.info.json        # Configuration description file
-│ │ │ └ config.json             # Configuration file, see CONFIG.md
-│ │ ├ CHANGELOG.md              # Changelog of mod
-│ │ ├ make.json                 # The main mod description file, describes all the information for the build
-│ │ └ README.md                 # Readme file
-│ ├ ...                         
-├ output                        # Output folder
-│ ├ release                     # Release build folder
-│ ├ debug                       # Debug build folder
-├ toolchain                     # Toolchain folder
-│ ├ ...                         
-├ .classpath                    # Java classpath file
-├ projects.json                 # A file with a list of all projects to build
-└ ...                           
-```
+Goto [toolchain wiki](https://github.com/TMM-Corporation/innercore-mod-toolchain/wiki) and follow instructions
 
 ### Build mod
 
