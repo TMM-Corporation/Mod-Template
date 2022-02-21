@@ -38,33 +38,7 @@ This is port for Minecraft Bedrock Edition, working under InnerCore for Horizon 
 
 ## Getting Started
 
-### To setup properly requires:
-
-1. [Toolchain](https://github.com/ToxesFoxes/innercore-mod-toolchain) to build mod
-2. [Python](https://www.python.org/) 3.6 or higher
-3. [node.js](https://nodejs.org/en/) 10.15.1 or higher, you need to have `typescript` installed 
-4. [Java Development Kit 1.8](https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html) or higher
-
-### Environment setup:
-1. Clone this repo into `/toolchain-mod/mods/`
-2. Configure make.json from root folder of mod
-3. Configure projects.json of the toolchain for selecting the project
-
-The `make.json` file should look like this:
-
-```json
-{
-  "current": "project-name",
-  "projects": {
-    "project-name": {
-      "folder": "mods/Mod-Template",
-      "make_config": "make.json"
-    }
-  }
-}
-```
-
-4. Configure ADB path if you have problems with connections.
+Goto [toolchain wiki](https://github.com/TMM-Corporation/innercore-mod-toolchain/wiki) and setup all
 
 ### Folder structure with Toolchain
 
