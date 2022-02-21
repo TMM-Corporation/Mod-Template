@@ -38,33 +38,7 @@
 
 ## Начало работы
 
-### Для правильной настройки требуется:
-
-1. [Toolchain](https://github.com/ToxesFoxes/innercore-mod-toolchain) для сборки мода
-2. [Python](https://www.python.org/) 3.6 или выше
-3. [node.js](https://nodejs.org/en/) 10.15.1 или выше, также необходимо установить `typescript`
-4. [Java Development Kit 1.8](https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html) или выше
-
-### Настройка среды:
-1. Клонируйте этот репозиторий в `/toolchain-mod/mods/`
-2. Настройте make.json в корневой папке этого мода
-3. Настройте projects.json тулчейна для выбора проекта
-
-Файл `make.json` должен выглядеть следующим образом:
-
-```json
-{
-  "current": "project-name",
-  "projects": {
-    "project-name": {
-      "folder": "mods/Mod-Template",
-      "make_config": "make.json"
-    }
-  }
-}
-```
-
-4. Настройте путь ADB, если у вас возникли проблемы с подключениями.
+Перейдите на [вики тулчейна](https://github.com/TMM-Corporation/innercore-mod-toolchain/wiki) и настройте проект
 
 ### Строение папок с тулчейном
 
